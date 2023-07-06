@@ -7,8 +7,8 @@ import Image from "next/image";
 
 export default async function Home() {
   return (
-    <main>
-      <section className="relative flex h-screen antialiased bg-gradient-to-r from-sky-100 to-slate-100">
+    <main className="antialiased">
+      <section className="relative flex h-screen w-screen bg-gradient-to-r from-sky-100 to-slate-100">
         <Link
           href=""
           className="flex h-6 absolute right-4 top-2 gap-2 hover:text-slate-400"
@@ -17,7 +17,7 @@ export default async function Home() {
           <Mail className="h-4 w-4 m-auto" />
         </Link>
         <div className="m-auto">
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-4 sm:gap-8">
             <Avatar className="relative aspect-square h-[8rem] w-[8rem] sm:h-[10rem] sm:w-[10rem] shadow-xl border-2 border-white">
               <Image
                 src={profilePic}
