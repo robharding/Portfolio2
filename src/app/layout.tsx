@@ -2,7 +2,7 @@ import "./globals.css";
 import { Barlow_Semi_Condensed } from "next/font/google";
 
 const barlow = Barlow_Semi_Condensed({
-  weight: ["500", "600", "700"],
+  weight: ["300", "500", "700"],
   subsets: ["latin"],
 });
 
