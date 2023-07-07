@@ -19,7 +19,7 @@ export default async function Home() {
         </Link>
         <div className="m-auto">
           <div className="flex gap-4 sm:gap-8 justify-center">
-            <Avatar className="relative aspect-square h-[8rem] w-[8rem] sm:h-[12rem] sm:w-[12rem] shadow-xl border-2 border-slate-50">
+            <Avatar className="relative aspect-square h-[10rem] w-[10rem] sm:h-[12rem] sm:w-[12rem] shadow-xl border-2 border-slate-50">
               <Image
                 src={profilePic}
                 alt="Profile"
@@ -29,7 +29,7 @@ export default async function Home() {
               />
             </Avatar>
             <div>
-              <h1 className="text-5xl sm:text-7xl font-bold">
+              <h1 className="text-6xl sm:text-7xl font-bold">
                 Rob
                 <br />
                 Harding
