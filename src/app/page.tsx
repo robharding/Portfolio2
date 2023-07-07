@@ -1,9 +1,10 @@
 import { Avatar } from "@/components/ui/avatar";
 import { Mail, Mails, MoveDown } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 import profilePic from "../../public/profile.jpg";
-import Image from "next/image";
+import asm2 from "../../public/asm2.png";
 
 export default async function Home() {
   return (
@@ -28,8 +29,10 @@ export default async function Home() {
               />
             </Avatar>
             <div>
-              <h1 className="text-5xl sm:text-7xl font-bold w-1">
-                Rob Harding
+              <h1 className="text-5xl sm:text-7xl font-bold">
+                Rob
+                <br />
+                Harding
               </h1>
               <h2 className="text-2xl sm:text-3xl">Web Developer</h2>
             </div>
@@ -69,18 +72,38 @@ export default async function Home() {
         id="projects"
       >
         <p>Want to see more? Check out my</p>
-        <h1 className="text-5xl sm:text-7xl font-bold text-sky-500">
+        <h1 className="text-6xl sm:text-7xl font-bold text-sky-500">
           PROJECTS
         </h1>
       </section>
-      <section className="relative flex bg-gradient-to-r from-sky-100 to-slate-100 p-16">
-        <h3 className="sm:text-4xl text-3xl font-semibold text-center w-full">
-          Coming soon ...
-        </h3>
+      <section className="relative flex bg-gradient-to-r from-sky-100 to-slate-100 py-16 w-full">
+        <div className="w-full flex flex-col gap-10 justify-center">
+          <h3 className="sm:text-5xl text-4xl text-center w-full">Featured</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-[1000px] mx-auto w-full px-8">
+            <a
+              href=""
+              className="relative flex flex-col overflow-hidden cursor-pointer hover:-translate-x-[3px] duration-200 hover:-translate-y-[3px]"
+            >
+              <Image src={asm2} alt="" className="object-fit" />
+            </a>
+            <a
+              href=""
+              className="relative flex flex-col overflow-hidden cursor-pointer hover:-translate-x-[3px] duration-200 hover:-translate-y-[3px]"
+            >
+              <Image src={asm2} alt="" className="object-fit" />
+            </a>
+            <a
+              href=""
+              className="relative flex flex-col overflow-hidden cursor-pointer hover:-translate-x-[3px] duration-200 hover:-translate-y-[3px]"
+            >
+              <Image src={asm2} alt="" className="object-fit" />
+            </a>
+          </div>
+        </div>
       </section>
       <section className="text-center p-16 bg-slate-50" id="projects">
         <p>What I&apos;m up to right</p>
-        <h1 className="text-5xl sm:text-7xl font-bold text-sky-500">NOW</h1>
+        <h1 className="text-6xl sm:text-7xl font-bold text-sky-500">NOW</h1>
       </section>
       <section className="relative flex bg-gradient-to-r from-sky-100 to-slate-100 py-16 px-10">
         <div className="mx-auto max-w-xl">
@@ -101,7 +124,7 @@ export default async function Home() {
       </section>
       <section className="text-center p-16 bg-slate-50" id="projects">
         <p>Get in touch.</p>
-        <h1 className="text-5xl sm:text-7xl font-bold text-sky-500">CONTACT</h1>
+        <h1 className="text-6xl sm:text-7xl font-bold text-sky-500">CONTACT</h1>
       </section>
       <section className="relative flex bg-gradient-to-r from-sky-100 to-slate-100 p-16">
         <Mails className="w-14 h-14 mt-4 mx-auto text-primary" />
