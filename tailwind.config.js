@@ -17,8 +17,8 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        custom: "3px 3px 0px 0px #60a5fa",
-        customFocus: "1px 1px 0px 0px #60a5fa",
+        custom: "3px 3px 0px 0px #0f172a",
+        customFocus: "1px 1px 0px 0px #0f172a",
       },
       colors: {
         border: "hsl(var(--border))",
