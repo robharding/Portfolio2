@@ -5,10 +5,11 @@ import Image from "next/image";
 
 import profilePic from "../../public/profile.jpg";
 import asm2 from "../../public/asm2.png";
+import ContactForm from "@/components/ContactForm";
 
 export default async function Home() {
   return (
-    <main className="antialiased text-lg scroll-smooth">
+    <main className="antialiased text-lg scroll-smooth text-primary">
       <section className="relative flex h-screen bg-gradient-to-r from-sky-100 to-white">
         <Link
           href=""
@@ -99,6 +100,9 @@ export default async function Home() {
               <Image src={asm2} alt="" className="object-fit" />
             </a>
           </div>
+          <p className="text-slate-400 text-center font-thin italic">
+            More coming soon...
+          </p>
         </div>
       </section>
       <section className="text-center p-16 bg-slate-50" id="projects">
@@ -122,12 +126,17 @@ export default async function Home() {
           </p>
         </div>
       </section>
-      <section className="text-center p-16 bg-slate-50" id="projects">
-        <p>Get in touch.</p>
-        <h1 className="text-6xl sm:text-7xl font-bold text-sky-500">CONTACT</h1>
-      </section>
-      <section className="relative flex bg-gradient-to-r from-sky-100 to-slate-100 p-16">
-        <Mails className="w-14 h-14 mt-4 mx-auto text-primary" />
+      <section className="relative bg-gradient-to-r from-sky-100 to-slate-100 h-screen">
+        <div className="text-center p-16 bg-slate-50" id="projects">
+          <p>Get in touch.</p>
+          <h1 className="text-6xl sm:text-7xl font-bold text-sky-500">
+            CONTACT
+          </h1>
+        </div>
+        <div className="px-10 max-w-xl m-auto pt-16">
+          <Mails className="w-14 h-14 mt-4 mx-auto text-primary" />
+          <ContactForm />
+        </div>
       </section>
     </main>
   );
