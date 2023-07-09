@@ -132,14 +132,14 @@ export default async function Home() {
           </p>
         </div>
       </section>
-      <section className="bg-gradient-to-r from-sky-100 to-slate-100 h-screen">
+      <section className="bg-gradient-to-r from-sky-100 to-slate-100">
         <div className="text-center p-16 bg-slate-50">
           <p>Get in touch.</p>
           <h1 className="text-6xl sm:text-7xl font-bold text-sky-500">
             CONTACT
           </h1>
         </div>
-        <div className="px-10 max-w-xl m-auto pt-10 flex flex-col gap-8">
+        <div className="px-10 max-w-xl m-auto py-16 flex flex-col gap-8">
           <Mails className="w-14 h-14 mt-4 mx-auto text-primary" />
           <ContactForm />
         </div>
