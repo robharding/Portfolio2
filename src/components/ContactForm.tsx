@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "./ui/textarea";
+import { Send } from "lucide-react";
 
 const formSchema = z.object({
   email: z.string().email(),
@@ -80,6 +81,7 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
           )}
         />
         <Button type="submit" className="">
+          <Send className="h-4 w-4 mr-2" />
           Submit
         </Button>
       </form>

@@ -1,5 +1,14 @@
 import { Avatar } from "@/components/ui/avatar";
-import { Mail, Mails, MoveDown } from "lucide-react";
+import {
+  Facebook,
+  Github,
+  Linkedin,
+  LucideLinkedin,
+  Mail,
+  Mails,
+  MoveDown,
+  Twitter,
+} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -102,7 +111,7 @@ export default async function Home() {
           </p>
         </div>
       </section>
-      <section className="text-center p-16 bg-slate-50" id="projects">
+      <section className="text-center p-16 bg-slate-50">
         <p>What I&apos;m up to right</p>
         <h1 className="text-6xl sm:text-7xl font-bold text-sky-500">NOW</h1>
       </section>
@@ -123,19 +132,26 @@ export default async function Home() {
           </p>
         </div>
       </section>
-      <section className="relative bg-gradient-to-r from-sky-100 to-slate-100 h-screen">
-        <div className="text-center p-16 bg-slate-50" id="projects">
+      <section className="bg-gradient-to-r from-sky-100 to-slate-100 h-screen">
+        <div className="text-center p-16 bg-slate-50">
           <p>Get in touch.</p>
           <h1 className="text-6xl sm:text-7xl font-bold text-sky-500">
             CONTACT
           </h1>
         </div>
-        <div className="px-10 max-w-xl m-auto pt-16 flex flex-col gap-8">
+        <div className="px-10 max-w-xl m-auto pt-10 flex flex-col gap-8">
           <Mails className="w-14 h-14 mt-4 mx-auto text-primary" />
           <ContactForm />
         </div>
       </section>
-      <section></section>
+      <section className="bg-slate-50 p-16 flex flex-col">
+        <div className="flex mx-auto gap-4">
+          <LucideLinkedin className="w-8 h-8 fill-primary hover:fill-slate-600 hover:text-slate-600 hover:cursor-pointer" />
+          <Github className="w-8 h-8 fill-primary hover:fill-slate-600 hover:text-slate-600 hover:cursor-pointer" />
+          <Twitter className="w-8 h-8 fill-primary hover:fill-slate-600 hover:text-slate-600 hover:cursor-pointer" />
+          <Facebook className="w-8 h-8 fill-primary hover:fill-slate-600 hover:text-slate-600 hover:cursor-pointer" />
+        </div>
+      </section>
     </main>
   );
 }
