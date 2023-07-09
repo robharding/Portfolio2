@@ -79,9 +79,7 @@ export default async function Home() {
       </section>
       <section className="text-center p-16 bg-slate-50" id="projects">
         <p>Want to see more? Check out my</p>
-        <h1 className="text-6xl sm:text-7xl font-bold text-sky-500">
-          PROJECTS
-        </h1>
+        <h1 className="text-6xl sm:text-7xl font-bold ">PROJECTS</h1>
       </section>
       <section className="flex bg-gradient-to-r from-sky-100 to-slate-100 py-16 w-full">
         <div className="w-full flex flex-col gap-10 justify-center">
@@ -113,17 +111,17 @@ export default async function Home() {
       </section>
       <section className="text-center p-16 bg-slate-50">
         <p>What I&apos;m up to right</p>
-        <h1 className="text-6xl sm:text-7xl font-bold text-sky-500">NOW</h1>
+        <h1 className="text-6xl sm:text-7xl font-bold">NOW</h1>
       </section>
       <section className="flex bg-gradient-to-r from-sky-100 to-slate-100 py-16 px-10">
         <div className="mx-auto max-w-xl">
           <p className="text-center">
             I&apos;ve moved back to{" "}
             <span className="text-sky-500">Toronto</span> after two
-            unforgettable ski seasons in BC. Currently working on building out
-            web apps to expand my portfolio. In my free time I like to hit the
-            gym as well as playing tennis with my dad. Still can&apos;t beat
-            him. Looking forward to a 10 day canoe trip in{" "}
+            unforgettable ski seasons in BC. Currently working on building
+            unique web applications to expand my portfolio. In my free time I
+            like to hit the gym as well as playing tennis with my dad. Still
+            can&apos;t beat him. Looking forward to a 10 day canoe trip in{" "}
             <span className="text-sky-500">Killarney</span> this August with
             some friends.
           </p>
@@ -132,14 +130,12 @@ export default async function Home() {
           </p>
         </div>
       </section>
-      <section className="bg-gradient-to-r from-sky-100 to-slate-100">
+      <section className=" bg-gradient-to-r from-sky-100 to-slate-100">
         <div className="text-center p-16 bg-slate-50">
           <p>Get in touch.</p>
-          <h1 className="text-6xl sm:text-7xl font-bold text-sky-500">
-            CONTACT
-          </h1>
+          <h1 className="text-6xl sm:text-7xl font-bold">CONTACT</h1>
         </div>
-        <div className="px-10 max-w-xl m-auto py-16 flex flex-col gap-8">
+        <div className="px-10 max-w-xl m-auto flex flex-col gap-8 py-16">
           <Mails className="w-14 h-14 mt-4 mx-auto text-primary" />
           <ContactForm />
         </div>
