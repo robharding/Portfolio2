@@ -94,12 +94,12 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
           onFocus={onClick}
           className={
             cn(
-              "font-semibold py-2 px-4 rounded-lg flex gap-2 select-none duration-200 shadow-custom -translate-x-1 -translate-y-1 bg-slate-50 hover:bg-white",
+              "font-semibold py-2 px-10 rounded-lg flex gap-2 select-none duration-200 shadow-custom -translate-x-1 -translate-y-1 bg-slate-50 hover:bg-white",
               buttonDown && "translate-x-0 translate-y-0 shadow-customDown"
             ) + " border-slate-900 border border-1"
           }
         >
-          <Send className="h-4 w-4 m-auto" />
+          <Send className="h-4 w-4 my-auto" />
           Send
         </button>
       </form>
