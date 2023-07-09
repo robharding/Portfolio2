@@ -68,10 +68,7 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      <section
-        className="drop-shadow-xl text-center p-16 bg-slate-50"
-        id="projects"
-      >
+      <section className="text-center p-16 bg-slate-50" id="projects">
         <p>Want to see more? Check out my</p>
         <h1 className="text-6xl sm:text-7xl font-bold text-sky-500">
           PROJECTS
@@ -105,10 +102,7 @@ export default async function Home() {
           </p>
         </div>
       </section>
-      <section
-        className="text-center p-16 bg-slate-50 drop-shadow-xl"
-        id="projects"
-      >
+      <section className="text-center p-16 bg-slate-50" id="projects">
         <p>What I&apos;m up to right</p>
         <h1 className="text-6xl sm:text-7xl font-bold text-sky-500">NOW</h1>
       </section>
@@ -130,10 +124,7 @@ export default async function Home() {
         </div>
       </section>
       <section className="relative bg-gradient-to-r from-sky-100 to-slate-100 h-screen">
-        <div
-          className="text-center p-16 bg-slate-50 drop-shadow-xl"
-          id="projects"
-        >
+        <div className="text-center p-16 bg-slate-50" id="projects">
           <p>Get in touch.</p>
           <h1 className="text-6xl sm:text-7xl font-bold text-sky-500">
             CONTACT
