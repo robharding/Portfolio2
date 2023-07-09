@@ -69,7 +69,7 @@ export default async function Home() {
         </div>
       </section>
       <section
-        className="drop-shadow-2xl text-center p-16 bg-slate-50"
+        className="drop-shadow-xl text-center p-16 bg-slate-50"
         id="projects"
       >
         <p>Want to see more? Check out my</p>
@@ -77,7 +77,7 @@ export default async function Home() {
           PROJECTS
         </h1>
       </section>
-      <section className="relative flex bg-gradient-to-r from-sky-100 to-slate-100 py-16 w-full">
+      <section className="flex bg-gradient-to-r from-sky-100 to-slate-100 py-16 w-full">
         <div className="w-full flex flex-col gap-10 justify-center">
           <h3 className="sm:text-5xl text-4xl text-center w-full">Featured</h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-[1000px] mx-auto w-full px-8">
@@ -105,11 +105,14 @@ export default async function Home() {
           </p>
         </div>
       </section>
-      <section className="text-center p-16 bg-slate-50" id="projects">
+      <section
+        className="text-center p-16 bg-slate-50 drop-shadow-xl"
+        id="projects"
+      >
         <p>What I&apos;m up to right</p>
         <h1 className="text-6xl sm:text-7xl font-bold text-sky-500">NOW</h1>
       </section>
-      <section className="relative flex bg-gradient-to-r from-sky-100 to-slate-100 py-16 px-10">
+      <section className="flex bg-gradient-to-r from-sky-100 to-slate-100 py-16 px-10">
         <div className="mx-auto max-w-xl">
           <p className="text-center">
             I&apos;ve moved back to{" "}
@@ -127,17 +130,21 @@ export default async function Home() {
         </div>
       </section>
       <section className="relative bg-gradient-to-r from-sky-100 to-slate-100 h-screen">
-        <div className="text-center p-16 bg-slate-50" id="projects">
+        <div
+          className="text-center p-16 bg-slate-50 drop-shadow-xl"
+          id="projects"
+        >
           <p>Get in touch.</p>
           <h1 className="text-6xl sm:text-7xl font-bold text-sky-500">
             CONTACT
           </h1>
         </div>
-        <div className="px-10 max-w-xl m-auto pt-16">
+        <div className="px-10 max-w-xl m-auto pt-16 flex flex-col gap-8">
           <Mails className="w-14 h-14 mt-4 mx-auto text-primary" />
           <ContactForm />
         </div>
       </section>
+      <section></section>
     </main>
   );
 }
