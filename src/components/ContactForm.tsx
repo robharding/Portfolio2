@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FC, useRef } from "react";
+import React, { FC, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -18,6 +18,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "./ui/textarea";
 import { Mail, Send } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const formSchema = z.object({
   email: z.string().email(),
@@ -38,11 +39,12 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
     console.log(values);
   };
 
-  const buttonRef = useRef<HTMLButtonElement>(null);
+  const [buttonDown, setButtonDown] = useState<boolean>(false);
 
-  const onFocus = async () => {
+  const onClick = async () => {
+    setButtonDown(true);
     await setTimeout(() => {
-      buttonRef?.current?.blur();
+      setButtonDown(false);
     }, 300);
   };
 
@@ -89,9 +91,13 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
           )}
         />
         <button
-          ref={buttonRef}
-          onFocus={onFocus}
-          className="border-slate-900 font-semibold border border-1 py-2 px-4 rounded-lg flex gap-2 select-none duration-200 shadow-custom focus:shadow-customFocus -translate-x-1 -translate-y-1 focus:translate-x-0 focus:translate-y-0 bg-slate-50 hover:bg-slate-100"
+          onFocus={onClick}
+          className={
+            cn(
+              "font-semibold py-2 px-4 rounded-lg flex gap-2 select-none duration-200 shadow-custom -translate-x-1 -translate-y-1 bg-slate-50 hover:bg-white",
+              buttonDown && "translate-x-0 translate-y-0 shadow-customDown"
+            ) + " border-slate-900 border border-1"
+          }
         >
           <Send className="h-4 w-4 m-auto" />
           Send
