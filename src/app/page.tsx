@@ -15,7 +15,6 @@ import Image from "next/image";
 import profilePic from "../../public/profile.jpg";
 import asm2 from "../../public/asm2.png";
 import ContactForm from "@/components/ContactForm";
-import { Balancer } from "react-wrap-balancer";
 
 export default async function Home() {
   return (
@@ -91,29 +90,29 @@ export default async function Home() {
             <div className="cursor-pointer font-semibold py-2 px-6 flex flex-col gap-2 rounded-lg duration-200 shadow-custom hover:-translate-x-1 hover:-translate-y-1 bg-slate-50 hover:bg-white border-slate-900 border border-1">
               <h1 className="text-xl">Project 1</h1>
               <hr />
-              <Balancer className="text-slate-500">
+              <p className="text-slate-500">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
                 esse animi repellendus sit harum possimus maxime, rem nihil illo
                 distinctio?
-              </Balancer>
+              </p>
             </div>
             <div className="cursor-pointer font-semibold py-2 px-6 flex flex-col gap-2 rounded-lg duration-200 shadow-custom hover:-translate-x-1 hover:-translate-y-1 bg-slate-50 hover:bg-white border-slate-900 border border-1">
               <h1 className="text-xl">Project 2</h1>
               <hr />
-              <Balancer className="text-slate-500">
+              <p className="text-slate-500">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
                 esse animi repellendus sit harum possimus maxime, rem nihil illo
                 distinctio?
-              </Balancer>
+              </p>
             </div>
             <div className="cursor-pointer font-semibold py-2 px-6 flex flex-col gap-2 rounded-lg duration-200 shadow-custom hover:-translate-x-1 hover:-translate-y-1 bg-slate-50 hover:bg-white border-slate-900 border border-1">
               <h1 className="text-xl">Project 3</h1>
               <hr />
-              <Balancer className="text-slate-500">
+              <p className="text-slate-500">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
                 esse animi repellendus sit harum possimus maxime, rem nihil illo
                 distinctio?
-              </Balancer>
+              </p>
             </div>
           </div>
           <p className="text-slate-400 text-center font-thin italic">
@@ -127,7 +126,7 @@ export default async function Home() {
       </section>
       <section className="flex bg-gradient-to-r from-sky-100 to-slate-100 py-16 px-10">
         <div className="mx-auto max-w-xl">
-          <Balancer>
+          <p>
             I&apos;ve moved back to{" "}
             <span className="text-sky-500">Toronto</span> after two
             unforgettable ski seasons in BC. Currently working on building
@@ -136,7 +135,7 @@ export default async function Home() {
             can&apos;t beat him. Looking forward to a 10 day canoe trip in{" "}
             <span className="text-sky-500">Killarney</span> this August with
             some friends.
-          </Balancer>
+          </p>
           <p className="text-slate-400 text-center mt-2 font-thin italic">
             Updated Thursday July 6th, 2023
           </p>
