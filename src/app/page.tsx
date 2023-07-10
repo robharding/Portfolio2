@@ -15,6 +15,7 @@ import Image from "next/image";
 import profilePic from "../../public/profile.jpg";
 import asm2 from "../../public/asm2.png";
 import ContactForm from "@/components/ContactForm";
+import { Balancer } from "react-wrap-balancer";
 
 export default async function Home() {
   return (
@@ -47,7 +48,7 @@ export default async function Home() {
               <h2 className="text-2xl sm:text-3xl">Web Developer</h2>
             </div>
           </div>
-          <p className="text-center mt-8 max-w-md">
+          <p className="text-center mt-20 max-w-md m-auto">
             You can find me on{" "}
             <Link href="" className="text-sky-500 hover:text-sky-600">
               LinkedIn
@@ -117,7 +118,7 @@ export default async function Home() {
       </section>
       <section className="flex bg-gradient-to-r from-sky-100 to-slate-100 py-16 px-10">
         <div className="mx-auto max-w-xl">
-          <p className="text-center">
+          <Balancer>
             I&apos;ve moved back to{" "}
             <span className="text-sky-500">Toronto</span> after two
             unforgettable ski seasons in BC. Currently working on building
@@ -126,7 +127,7 @@ export default async function Home() {
             can&apos;t beat him. Looking forward to a 10 day canoe trip in{" "}
             <span className="text-sky-500">Killarney</span> this August with
             some friends.
-          </p>
+          </Balancer>
           <p className="text-slate-400 text-center mt-2 font-thin italic">
             Updated Thursday July 6th, 2023
           </p>
