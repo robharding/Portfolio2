@@ -127,7 +127,7 @@ export default async function Home() {
       </section>
       <section className="flex bg-gradient-to-r from-sky-100 to-slate-100 py-16 px-10">
         <div className="mx-auto max-w-xl">
-          <Balancer>
+          <Balancer className="leading-loose">
             I&apos;ve moved back to{" "}
             <span className="text-sky-500">Toronto</span> after two
             unforgettable ski seasons in BC. Currently working on building
