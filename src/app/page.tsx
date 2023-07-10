@@ -87,25 +87,34 @@ export default async function Home() {
       <section className="flex bg-gradient-to-r from-sky-100 to-slate-100 py-16 w-full">
         <div className="w-full flex flex-col gap-10 justify-center">
           <h3 className="sm:text-5xl text-4xl text-center w-full">Featured</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-[1000px] mx-auto w-full px-8">
-            <a
-              href=""
-              className="relative flex flex-col overflow-hidden cursor-pointer hover:-translate-x-[3px] duration-200 hover:-translate-y-[3px]"
-            >
-              <Image src={asm2} alt="" className="object-fit" />
-            </a>
-            <a
-              href=""
-              className="relative flex flex-col overflow-hidden cursor-pointer hover:-translate-x-[3px] duration-200 hover:-translate-y-[3px]"
-            >
-              <Image src={asm2} alt="" className="object-fit" />
-            </a>
-            <a
-              href=""
-              className="relative flex flex-col overflow-hidden cursor-pointer hover:-translate-x-[3px] duration-200 hover:-translate-y-[3px]"
-            >
-              <Image src={asm2} alt="" className="object-fit" />
-            </a>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-4 max-w-[1000px] mx-auto w-full px-8">
+            <div className="cursor-pointer font-semibold py-2 px-6 flex flex-col gap-2 rounded-lg duration-200 shadow-custom hover:-translate-x-1 hover:-translate-y-1 bg-slate-50 hover:bg-white border-slate-900 border border-1">
+              <h1 className="text-xl">Project 1</h1>
+              <hr />
+              <Balancer className="text-slate-500">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                esse animi repellendus sit harum possimus maxime, rem nihil illo
+                distinctio?
+              </Balancer>
+            </div>
+            <div className="cursor-pointer font-semibold py-2 px-6 flex flex-col gap-2 rounded-lg duration-200 shadow-custom hover:-translate-x-1 hover:-translate-y-1 bg-slate-50 hover:bg-white border-slate-900 border border-1">
+              <h1 className="text-xl">Project 2</h1>
+              <hr />
+              <Balancer className="text-slate-500">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                esse animi repellendus sit harum possimus maxime, rem nihil illo
+                distinctio?
+              </Balancer>
+            </div>
+            <div className="cursor-pointer font-semibold py-2 px-6 flex flex-col gap-2 rounded-lg duration-200 shadow-custom hover:-translate-x-1 hover:-translate-y-1 bg-slate-50 hover:bg-white border-slate-900 border border-1">
+              <h1 className="text-xl">Project 3</h1>
+              <hr />
+              <Balancer className="text-slate-500">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                esse animi repellendus sit harum possimus maxime, rem nihil illo
+                distinctio?
+              </Balancer>
+            </div>
           </div>
           <p className="text-slate-400 text-center font-thin italic">
             More coming soon...
