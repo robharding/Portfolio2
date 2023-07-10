@@ -1,10 +1,10 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Barlow_Semi_Condensed, Inter } from "next/font/google";
 
-// const barlow = Barlow_Semi_Condensed({
-//   weight: ["300", "500", "600", "700"],
-//   subsets: ["latin"],
-// });
+const barlow = Barlow_Semi_Condensed({
+  weight: ["300", "500", "600", "700"],
+  subsets: ["latin"],
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={barlow.className}>{children}</body>
     </html>
   );
 }
