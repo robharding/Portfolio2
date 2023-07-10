@@ -20,14 +20,7 @@ import { Balancer } from "react-wrap-balancer";
 export default async function Home() {
   return (
     <main className="antialiased text-lg scroll-smooth text-primary">
-      <section className="relative flex h-screen bg-gradient-to-r from-sky-100 to-white">
-        <Link
-          href=""
-          className="flex h-6 absolute right-4 top-2 gap-2 hover:text-slate-400"
-        >
-          <p className="text-sm m-auto">Join my newsletter</p>{" "}
-          <Mail className="h-4 w-4 m-auto" />
-        </Link>
+      <section className="flex h-screen bg-gradient-to-r from-sky-100 to-white">
         <div className="m-auto">
           <div className="flex gap-4 sm:gap-8 justify-center">
             <Avatar className="relative aspect-square h-[10rem] w-[10rem] sm:h-[12rem] sm:w-[12rem] shadow-xl border-2 border-slate-50">
