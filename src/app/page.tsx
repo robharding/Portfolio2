@@ -42,15 +42,24 @@ export default async function Home() {
           </div>
           <p className="text-center mt-20 max-w-md m-auto">
             You can find me on{" "}
-            <Link href="" className="text-sky-500 hover:text-sky-600">
+            <Link
+              href="https://www.linkedin.com/in/robjharding/"
+              className="text-sky-500 hover:text-sky-600"
+            >
               LinkedIn
             </Link>
             ,{" "}
-            <Link href="" className="text-sky-500 hover:text-sky-600">
+            <Link
+              href="https://github.com/robharding"
+              className="text-sky-500 hover:text-sky-600"
+            >
               Github
             </Link>
             , or{" "}
-            <Link href="" className="text-sky-500 hover:text-sky-600">
+            <Link
+              href="https://www.threads.net/@robharding__"
+              className="text-sky-500 hover:text-sky-600"
+            >
               Threads
             </Link>
             .<br />
