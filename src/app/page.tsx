@@ -82,7 +82,7 @@ export default async function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-4 max-w-[1000px] mx-auto w-full px-8">
             <Link
               href="https://breadit.robharding.dev"
-              className="cursor-pointer font-semibold py-2 px-6 flex flex-col gap-2 rounded-lg duration-200 shadow-custom hover:-translate-x-1 hover:-translate-y-1 bg-slate-50 hover:bg-white border-slate-900 border border-1"
+              className="cursor-pointer font-semibold py-4 px-6 flex flex-col gap-2 rounded-lg duration-200 shadow-custom hover:-translate-x-1 hover:-translate-y-1 bg-slate-50 hover:bg-white border-slate-900 border border-1"
             >
               <div className="flex gap-2 items-center">
                 <Image
@@ -100,7 +100,7 @@ export default async function Home() {
                 voting.
               </Balancer>
             </Link>
-            <div className="cursor-pointer font-semibold py-2 px-6 flex flex-col gap-2 rounded-lg duration-200 shadow-custom hover:-translate-x-1 hover:-translate-y-1 bg-slate-50 hover:bg-white border-slate-900 border border-1">
+            <div className="cursor-pointer font-semibold py-4 px-6 flex flex-col gap-2 rounded-lg duration-200 shadow-custom hover:-translate-x-1 hover:-translate-y-1 bg-slate-50 hover:bg-white border-slate-900 border border-1">
               <h1 className="text-2xl">Project 2</h1>
               <hr />
               <Balancer className="text-slate-500 p-2">
@@ -109,7 +109,7 @@ export default async function Home() {
                 distinctio?
               </Balancer>
             </div>
-            <div className="cursor-pointer font-semibold py-2 px-6 flex flex-col gap-2 rounded-lg duration-200 shadow-custom hover:-translate-x-1 hover:-translate-y-1 bg-slate-50 hover:bg-white border-slate-900 border border-1">
+            <div className="cursor-pointer font-semibold py-4 px-6 flex flex-col gap-2 rounded-lg duration-200 shadow-custom hover:-translate-x-1 hover:-translate-y-1 bg-slate-50 hover:bg-white border-slate-900 border border-1">
               <h1 className="text-2xl">Project 3</h1>
               <hr />
               <Balancer className="text-slate-500 p-2">
