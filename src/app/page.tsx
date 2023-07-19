@@ -37,7 +37,7 @@ export default async function Home() {
                 <br />
                 HARDING
               </h1>
-              <h2 className="text-2xl sm:text-3xl">Web Developer</h2>
+              <h2 className="text-2xl sm:text-3xl italic">Web Developer</h2>
             </div>
           </div>
           <p className="text-center mt-20 max-w-md m-auto">
@@ -81,9 +81,9 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      <section className="text-center p-16 bg-slate-50" id="projects">
+      <section className="text-center p-16 bg-slate-50 italic" id="projects">
         <p>Want to see more? Check out my</p>
-        <h1 className="text-5xl sm:text-7xl font-bold italic">PROJECTS</h1>
+        <h1 className="text-5xl sm:text-7xl font-bold">PROJECTS</h1>
       </section>
       <section className="flex bg-gradient-to-r from-sky-100 to-slate-100 py-16 w-full">
         <div className="w-full flex flex-col gap-10 justify-center">
@@ -133,9 +133,9 @@ export default async function Home() {
           </p>
         </div>
       </section>
-      <section className="text-center p-16 bg-slate-50">
+      <section className="text-center p-16 bg-slate-50 italic">
         <p>What I&apos;m up to right</p>
-        <h1 className="text-5xl sm:text-7xl font-bold italic">NOW</h1>
+        <h1 className="text-5xl sm:text-7xl font-bold">NOW</h1>
       </section>
       <section className="flex bg-gradient-to-r from-sky-100 to-slate-100 py-16 px-10">
         <div className="mx-auto max-w-xl">
@@ -155,7 +155,7 @@ export default async function Home() {
         </div>
       </section>
       <section className=" bg-gradient-to-r from-sky-100 to-slate-100">
-        <div className="text-center p-16 bg-slate-50">
+        <div className="text-center p-16 bg-slate-50 italic">
           <p>Get in touch.</p>
           <h1 className="text-5xl sm:text-7xl font-bold italic">CONTACT</h1>
         </div>
