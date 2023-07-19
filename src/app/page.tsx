@@ -1,13 +1,10 @@
 import { Avatar } from "@/components/ui/avatar";
 import {
-  Facebook,
+  ChevronUpIcon,
   Github,
-  Linkedin,
   LucideLinkedin,
-  Mail,
   Mails,
   MoveDown,
-  Twitter,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -19,7 +16,10 @@ import { Balancer } from "react-wrap-balancer";
 export default async function Home() {
   return (
     <main className="antialiased text-lg scroll-smooth text-primary">
-      <section className="flex h-screen bg-gradient-to-r from-sky-100 to-white">
+      <section
+        id="hero"
+        className="flex h-screen bg-gradient-to-r from-sky-100 to-white"
+      >
         <div className="m-auto">
           <div className="flex gap-4 sm:gap-8 justify-center">
             <Avatar className="relative aspect-square h-[10rem] w-[10rem] sm:h-[12rem] sm:w-[12rem] shadow-xl border-2 border-slate-50">
@@ -165,11 +165,9 @@ export default async function Home() {
         </div>
       </section>
       <section className="bg-slate-50 p-16 flex flex-col">
-        <div className="flex mx-auto gap-4">
+        <div className="flex mx-auto gap-4 items-center">
           <LucideLinkedin className="w-8 h-8 fill-primary hover:fill-slate-600 hover:text-slate-600 hover:cursor-pointer" />
           <Github className="w-8 h-8 fill-primary hover:fill-slate-600 hover:text-slate-600 hover:cursor-pointer" />
-          <Twitter className="w-8 h-8 fill-primary hover:fill-slate-600 hover:text-slate-600 hover:cursor-pointer" />
-          <Facebook className="w-8 h-8 fill-primary hover:fill-slate-600 hover:text-slate-600 hover:cursor-pointer" />
         </div>
       </section>
     </main>
