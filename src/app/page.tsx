@@ -83,7 +83,7 @@ export default async function Home() {
       </section>
       <section className="text-center p-16 bg-slate-50" id="projects">
         <p>Want to see more? Check out my</p>
-        <h1 className="text-6xl sm:text-7xl font-bold italic">PROJECTS</h1>
+        <h1 className="text-5xl sm:text-7xl font-bold italic">PROJECTS</h1>
       </section>
       <section className="flex bg-gradient-to-r from-sky-100 to-slate-100 py-16 w-full">
         <div className="w-full flex flex-col gap-10 justify-center">
@@ -135,7 +135,7 @@ export default async function Home() {
       </section>
       <section className="text-center p-16 bg-slate-50">
         <p>What I&apos;m up to right</p>
-        <h1 className="text-6xl sm:text-7xl font-bold italic">NOW</h1>
+        <h1 className="text-5xl sm:text-7xl font-bold italic">NOW</h1>
       </section>
       <section className="flex bg-gradient-to-r from-sky-100 to-slate-100 py-16 px-10">
         <div className="mx-auto max-w-xl">
@@ -157,7 +157,7 @@ export default async function Home() {
       <section className=" bg-gradient-to-r from-sky-100 to-slate-100">
         <div className="text-center p-16 bg-slate-50">
           <p>Get in touch.</p>
-          <h1 className="text-6xl sm:text-7xl font-bold italic">CONTACT</h1>
+          <h1 className="text-5xl sm:text-7xl font-bold italic">CONTACT</h1>
         </div>
         <div className="px-10 max-w-xl m-auto flex flex-col gap-8 py-16">
           <Mails className="w-14 h-14 mt-4 mx-auto text-primary" />
