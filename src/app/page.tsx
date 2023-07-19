@@ -69,10 +69,10 @@ export default async function Home() {
             </Link>
             .
           </p>
-          <div className="group text-center mt-8 hover:cursor-pointer  hover:slate-600">
+          <div className="group text-center mt-8 hover:cursor-pointer hover:text-slate-500">
             <Link href="#projects">
               Click a{" "}
-              <span className="text-sky-500 group-hover:text-sky-600">
+              <span className="text-sky-500 group-hover:text-sky-400">
                 link
               </span>{" "}
               or have a scroll
