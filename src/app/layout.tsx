@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Barlow_Semi_Condensed, Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const barlow = Barlow_Semi_Condensed({
   weight: ["300", "500", "600", "700"],
@@ -26,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={barlow.className}>{children}</body>
+      <Analytics />
     </html>
   );
 }
